@@ -6,7 +6,7 @@ Docker container for [Logmatic](https://logmatic.io) (via rsyslog)
 
 ### With Docker
 ```bash
-docker run -e LOGMATIC_TOKEN=YOUR_TOKEN -e LOGMATIC_TAGS="environment=staging,zone=europe" heetch/rsyslog-logmatic
+docker run -e LOGMATIC_TOKEN="YOUR_TOKEN" -e LOGMATIC_TAGS='environment="staging" zone="europe"' quay.io/heetch/rsyslog-logmatic
 ```
 
 ### With Marathon and Docker
